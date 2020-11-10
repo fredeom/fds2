@@ -1,2 +1,1 @@
-import './index.css';
-import './style.scss';
+import './components/colors.scss';

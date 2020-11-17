@@ -1,0 +1,30 @@
+.text_field_label {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+/*
+.text_field_demo::after {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  content: "default";
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+*/
+
+/*
+.text_field:focus, .text_field:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 4px;
+}
+*/

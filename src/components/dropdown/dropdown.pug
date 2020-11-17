@@ -1,0 +1,7 @@
+mixin dropdown(name, ph, innerSelect)
+  label.dropdown__title= name
+  .dropdown-select
+    .dropdown-select__text= ph
+    .dropdown-select__icon
+  +#{innerSelect}
+  

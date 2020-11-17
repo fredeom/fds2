@@ -50,6 +50,10 @@ const config = {
       filename: 'uikit1.html',
       template: './src/uikit1.pug',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'uikit2.html',
+      template: './src/form_elements.pug',
+    }),
     //new HtmlWebpackPugPlugin()
  ]
 };

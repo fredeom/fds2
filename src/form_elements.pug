@@ -1,0 +1,15 @@
+include components/textfield/textfield.pug
+include components/dropdown/__inner/dropdown__inner.pug
+include components/dropdown/dropdown.pug
+
+doctype html
+head
+  title Form Elemenets
+
+body
+  .wrapper1
+    +textfield('text field', 'Email', true)
+    .dropdown-local-wrapper
+      +dropdown('dropdown', 'Сколько гостей', 'dropdown__inner_guests')
+    .dropdown-local-wrapper
+      +dropdown('dropdown', 'Какие удобства', 'dropdown__inner_facilities')

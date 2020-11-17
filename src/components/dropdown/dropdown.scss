@@ -1,0 +1,27 @@
+.dropdown__title {
+  text-transform: uppercase;
+}
+
+.dropdown-select {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-select__text {
+  color: rgba(191,191,191,.87);
+  margin: 10px;
+}
+
+.dropdown-select__icon {
+  width: 8px;
+  height: 8px;
+  margin: 10px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(45deg);
+}

@@ -1,4 +1,4 @@
-mixin textfield(name, ph, demo=false)
+mixin textfield(name, ph, mask=null, demo=false)
   label.text_field_label= name
   br
-  input.text_field(placeholder=ph,class=demo?'text_field_demo':'')
+  input.text_field(placeholder=ph,class=demo?'text_field_demo':'',class=mask?'text_field_masked':'',data-mask=mask ? mask : undefined)

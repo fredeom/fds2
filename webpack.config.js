@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin'); //     "html-webpack-pug-plugin": "^2.0.0",
+const webpack = require("webpack");
 
 const config = {
   entry: './src/app.js',
@@ -53,6 +54,11 @@ const config = {
     new HtmlWebpackPlugin({
       filename: 'uikit2.html',
       template: './src/form_elements.pug',
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      mask: "jquery-mask-plugin",
     }),
     //new HtmlWebpackPugPlugin()
  ]

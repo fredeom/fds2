@@ -9,8 +9,9 @@ head
 
 body
   .wrapper1
-    +textfield('text field', 'Email', true)
+    +textfield('text field', 'Email', null, true)
     .dropdown-local-wrapper
       +dropdown('dropdown', 'Сколько гостей', 'dropdown__inner_guests')
     .dropdown-local-wrapper
       +dropdown('dropdown', 'Какие удобства', 'dropdown__inner_facilities')
+    +textfield('text field', 'ДД.ММ.ГГГГ', '99.99.9999')

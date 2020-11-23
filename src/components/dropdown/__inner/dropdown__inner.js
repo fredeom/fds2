@@ -20,12 +20,13 @@ document.querySelectorAll('.plus-control.inner-plus-minus-control__control').for
   this.parentNode.parentNode.parentNode.querySelector('.dropdown__inner-clear').classList.add('visible');
 });
 
-document.querySelectorAll('.dropdown__inner-clear').forEach(ic => ic.onclick = function () {
+document.querySelectorAll('.dropdown__inner_facilities .dropdown__inner-clear, .dropdown__inner_guests .dropdown__inner-clear').forEach(ic => ic.onclick = function () {
   this.parentNode.parentNode.querySelectorAll('.value').forEach(v => v.textContent = '0');
   this.parentNode.parentNode.querySelectorAll('.minus-control.inner-plus-minus-control__control').forEach(mc => mc.classList.add('disabled'));
+  this.classList.remove('visible');
 });
 
-document.querySelectorAll('.dropdown__inner-apply').forEach(ia => ia.onclick = function () {
+document.querySelectorAll('.dropdown__inner_facilities .dropdown__inner-apply, .dropdown__inner_guests .dropdown__inner-apply').forEach(ia => ia.onclick = function () {
   const values = Array.from(this.parentNode.parentNode.querySelectorAll('.value')).map(v => parseInt(v.textContent));
   let msg = '';
   const s = values.reduce((a, c) => a + c, 0);

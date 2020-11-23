@@ -17,50 +17,6 @@ mixin dropdown__inner_guests()
 mixin dropdown__inner_facilities()
   +dropdown__inner('dropdown__inner_facilities', ['Спальни', 'Кровати', 'Ванные комнаты'])
 
-
-//- mixin dropdown__inner_guests()
-  .dropdown__inner-wrapper.dropdown__inner_guests
-    .dropdown__inner-row
-      .dropdown__inner-title= 'Взрослые'
-      .dropdown__inner-plus-minus-control
-        .minus-control.inner-plus-minus-control__control= '-'
-        .value= '0'
-        .plus-control.inner-plus-minus-control__control= '+'
-    .dropdown__inner-row
-      .dropdown__inner-title= 'Дети'
-      .dropdown__inner-plus-minus-control
-        .minus-control.inner-plus-minus-control__control= '-'
-        .value= '0'
-        .plus-control.inner-plus-minus-control__control= '+'
-    .dropdown__inner-row
-      .dropdown__inner-title= 'Младенцы'
-      .dropdown__inner-plus-minus-control
-        .minus-control.inner-plus-minus-control__control= '-'
-        .value= '0'
-        .plus-control.inner-plus-minus-control__control= '+'
-    div(style="height: 47px;")
-      .dropdown__inner-apply= 'Применить'
-
-//- mixin dropdown__inner_facilities()
-  .dropdown__inner-wrapper.dropdown__inner_facilities
-    .dropdown__inner-row
-      .dropdown__inner-title= 'Спальни'
-      .dropdown__inner-plus-minus-control
-        .minus-control.inner-plus-minus-control__control= '-'
-        .value= '0'
-        .plus-control.inner-plus-minus-control__control= '+'
-    .dropdown__inner-row
-      .dropdown__inner-title= 'Кровати'
-      .dropdown__inner-plus-minus-control
-        .minus-control.inner-plus-minus-control__control= '-'
-        .value= '0'
-        .plus-control.inner-plus-minus-control__control= '+'
-    .dropdown__inner-row
-      .dropdown__inner-title= 'Ванные комнаты'
-      .dropdown__inner-plus-minus-control
-        .minus-control.inner-plus-minus-control__control= '-'
-        .value= '0'
-        .plus-control.inner-plus-minus-control__control= '+'
-    div(style="height: 47px;")
-      .dropdown__inner-clear= 'Очистить'
-      .dropdown__inner-apply= 'Применить'
+mixin dropdown__inner_calendar()
+  .dropdown__inner-wrapper.dropdown__inner_calendar
+    h1 hello

@@ -1,0 +1,43 @@
+.calendar_title_and_control {
+  padding: 20px;
+}
+
+.calendar_date_header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.calendar_date_header_item {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+  padding: 10px;
+}
+
+.calendar_date_content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  margin-left: 35px;
+}
+
+.calendar_date_content_item {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 10px;
+}
+
+.gray {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.black {
+  color: black;  
+}

@@ -15,3 +15,11 @@ exports.smart_ends = function(num, words) {
   }
   return '' + num + ' ' + words[choose];
 }
+
+exports.getDateString = function (date) {
+  return date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+}
+
+exports.getDateFromString = function (dateStr) {
+  return new Date(parseInt(dateStr.split("-")[0]), parseInt(dateStr.split("-")[1]) - 1, parseInt(dateStr.split("-")[2]))
+}

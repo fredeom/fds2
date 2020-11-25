@@ -16,10 +16,19 @@ exports.smart_ends = function(num, words) {
   return '' + num + ' ' + words[choose];
 }
 
+function pad0(num, count) {
+  let s = '' + num;
+  while (s.length < count) s = '0' + s;
+  return s;
+}
+
 exports.getDateString = function (date) {
-  return date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+  const y = date.getUTCFullYear();
+  const m = pad0(date.getUTCMonth() + 1, 2);
+  const d = pad0(date.getUTCDate(), 2);
+  return d + "." + m + "." + y;
 }
 
 exports.getDateFromString = function (dateStr) {
-  return new Date(parseInt(dateStr.split("-")[0]), parseInt(dateStr.split("-")[1]) - 1, parseInt(dateStr.split("-")[2]))
+  return new Date(parseInt(dateStr.split(".")[2]), parseInt(dateStr.split(".")[1]) - 1, parseInt(dateStr.split(".")[0]))
 }

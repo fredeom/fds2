@@ -1,9 +1,3 @@
-function fun() {
-  console.log(123);
-}
-
-fun();
-
 import './components/textfield/textfield.scss';
 import './components/dropdown/__inner/dropdown__inner.scss';
 import './components/dropdown/__inner/dropdown__inner_calendar.scss';

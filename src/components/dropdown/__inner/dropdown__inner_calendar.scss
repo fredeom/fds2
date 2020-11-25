@@ -32,6 +32,7 @@
   font-size: 12px;
   line-height: 15px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .gray {
@@ -40,4 +41,13 @@
 
 .black {
   color: black;  
+}
+
+.selected {
+  border-radius: 50%;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.arrow_left, .arrow_right {
+  cursor: pointer;
 }

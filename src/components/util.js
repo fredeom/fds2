@@ -22,12 +22,19 @@ function pad0(num, count) {
   return s;
 }
 
+exports.pad0 = pad0;
+
 exports.getDateString = function (date) {
   const y = date.getUTCFullYear();
   const m = pad0(date.getUTCMonth() + 1, 2);
   const d = pad0(date.getUTCDate(), 2);
   return d + "." + m + "." + y;
 }
+
+exports.getDateDayMonthString = function (date) {
+  return date.getUTCDate() + " " + (['янв', 'фев', 'март', 'апр', 'май', 'июнь', 'июль', 'авг', 'снт', 'окт', 'нбр', 'дкб'][date.getUTCMonth()]);
+}
+
 
 exports.getDateFromString = function (dateStr) {
   return new Date(parseInt(dateStr.split(".")[2]), parseInt(dateStr.split(".")[1]) - 1, parseInt(dateStr.split(".")[0]))

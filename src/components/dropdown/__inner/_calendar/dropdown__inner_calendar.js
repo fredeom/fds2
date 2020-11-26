@@ -16,7 +16,6 @@ function fillCalendar(ic, date, currentDate) {
   const mIndex = date.getMonth();
   const mName = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'][mIndex];
   const yNum = date.getYear() + 1900;
-  console.log(firstDayOfMonth, firstDayOfWindow, lastDayOfWindow);
   let dateHeader = '<div class="calendar_date_header">';
   for (let i of ['Пн','Вт','Ср','Чт','Пт','Сб','Вс']) {
     dateHeader += '<div class="calendar_date_header_item">' + i + '</div>';
@@ -67,16 +66,18 @@ function fillCalendar(ic, date, currentDate) {
   });
 }
 
-document.querySelectorAll(".dropdown-select").forEach(ds => ds.addEventListener('click', () => {
-  const selectedDate = ds.querySelector(".dropdown-select__text").textContent;
-  let parsedDate, currentDate;
-  try {
-    if (selectedDate == 'ДД.ММ.ГГГГ') throw new Error('not selected');
-    const [d,m,y] = selectedDate.split('.')
-    parsedDate = new Date('' + y + '-' + m + '-' + d);
-    currentDate = parsedDate;
-  } catch(e) {
-    parsedDate = new Date();
-  }
-  fillCalendar(ds.parentNode.querySelector(".dropdown__inner_calendar"), parsedDate, currentDate)
-}));
+document.querySelectorAll(".dropdown__inner_calendar").forEach(ic => {
+  ic.parentNode.querySelectorAll('.dropdown-select').forEach(ds => ds.addEventListener('click', () => {
+    const selectedDate = ds.querySelector(".dropdown-select__text").textContent;
+    let parsedDate, currentDate;
+    try {
+      if (selectedDate == 'ДД.ММ.ГГГГ') throw new Error('not selected');
+      const [d,m,y] = selectedDate.split('.')
+      parsedDate = new Date('' + y + '-' + m + '-' + d);
+      currentDate = parsedDate;
+    } catch(e) {
+      parsedDate = new Date();
+    }
+    fillCalendar(ic, parsedDate, currentDate)
+  }));
+});

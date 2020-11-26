@@ -1,0 +1,9 @@
+mixin dropdown-calendar2(name, ph)
+  .dropdown-calendar2
+    label.dropdown__title= name
+    .dropdown-select
+      .dropdown-select__text= ph
+      .dropdown-select__icon
+      input.dropdown-calendar2__start-date(type='hidden')
+      input.dropdown-calendar2__end-date(type='hidden')
+    .dropdown__inner-wrapper

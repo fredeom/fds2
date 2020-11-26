@@ -1,5 +1,6 @@
 include components/textfield/textfield.pug
 include components/dropdown/__inner/dropdown__inner.pug
+include components/dropdown/dropdown-calendar2.pug
 include components/dropdown/dropdown.pug
 
 doctype html
@@ -17,3 +18,5 @@ body
     +textfield('text field', 'ДД.ММ.ГГГГ', '99.99.9999')
     .dropdown-local-wrapper
       +dropdown('date dropdown', 'ДД.ММ.ГГГГ', 'dropdown__inner_calendar')
+    .dropdown-local-wrapper
+      +dropdown-calendar2('filter date dropdown', 'начало - конец')

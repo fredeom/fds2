@@ -1,7 +1,9 @@
 include components/textfield/textfield.pug
+include components/textfield/subscription-textfield.pug
 include components/dropdown/__inner/dropdown__inner.pug
 include components/dropdown/dropdown-calendar2.pug
 include components/dropdown/dropdown.pug
+include components/expandable-checkbox-list/expandable-checkbox-list.pug
 
 doctype html
 head
@@ -20,3 +22,14 @@ body
       +dropdown('date dropdown', 'ДД.ММ.ГГГГ', 'dropdown__inner_calendar')
     .dropdown-local-wrapper
       +dropdown-calendar2('filter date dropdown', 'начало - конец')
+    div(style="width: 267px; margin-top: 10px;")
+      +subscription-textfield()
+    div(style="width: 267px; margin-top: 10px;")
+      +expandable-checkbox-list([
+        {value: 'Завтрак', checked: false},
+        {value: 'Письменный стол', checked: true},
+        {value: 'Стул для кормления', checked: true},
+        {value: 'Кроватка', checked: true},
+        {value: 'Телевизор', checked: false},
+        {value: 'Шампунь', checked: false}
+      ])

@@ -1,0 +1,12 @@
+include ../checkbox/checkbox.pug
+
+mixin expandable-checkbox-list(itemList)
+  .expandable-checkbox-list
+    .expandable-checkbox-list__header
+      label.expandable-checkbox-list__title= 'expandable checkbox list'
+      .expandable-checkbox-list__arrow
+    .expandable-checkbox-list__item-wrapper
+      each val in itemList
+        .expandable-checkbox-list__item-row
+          +checkbox(val.checked)
+          label.expandable-checkbox-list__item-title= val.value

@@ -1,0 +1,48 @@
+.expandable-checkbox-list__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expandable-checkbox-list__title {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+}
+
+.expandable-checkbox-list__arrow {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+}
+
+.rotate225 {
+  transform: rotate(225deg);
+}
+
+.expandable-checkbox-list__item-wrapper {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.expandable-checkbox-list__item-row {
+  margin-top: 10px;
+}
+
+.expandable-checkbox-list__item-title {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 10px;
+}

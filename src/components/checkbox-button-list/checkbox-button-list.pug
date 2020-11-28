@@ -1,0 +1,10 @@
+include ../checkbox/checkbox.pug
+
+mixin checkbox-button-list(itemList)
+  .checkbox-button-list
+    label.checkbox-button-list__title= 'checkbox button list'
+    .checkbox-button-list__item-wrapper
+      each val in itemList
+        .checkbox-button-list__item-row
+          +checkbox(val.checked)
+          label.checkbox-button-list__item-title= val.value

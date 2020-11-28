@@ -1,0 +1,4 @@
+mixin radio(checked, group_name)
+  .radio(class=checked ? 'checked' : undefined)
+    input(type='radio',style='display:none',name= group_name,checked= checked ? "" : undefined)
+    .radio__check(class=checked ? 'visible' : undefined)

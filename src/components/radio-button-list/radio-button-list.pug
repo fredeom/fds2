@@ -1,0 +1,11 @@
+include ../radio/radio.pug
+
+mixin radio-button-list(itemList)
+  .radio-button-list
+    label.radio-button-list__title= 'radio buttons'
+    form
+      .radio-button-list__item-wrapper
+        each val in itemList
+          .radio-button-list__item-row
+            +radio(val.checked, 'groupname')
+            label.radio-button-list__item-title= val.value

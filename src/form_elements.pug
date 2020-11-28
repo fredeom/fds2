@@ -4,6 +4,9 @@ include components/dropdown/__inner/dropdown__inner.pug
 include components/dropdown/dropdown-calendar2.pug
 include components/dropdown/dropdown.pug
 include components/expandable-checkbox-list/expandable-checkbox-list.pug
+include components/checkbox-button-list/checkbox-button-list.pug
+include components/radio-button-list/radio-button-list.pug
+include components/toggle/toggle.pug
 
 doctype html
 head
@@ -12,24 +15,46 @@ head
 
 body
   .wrapper1
-    +textfield('text field', 'Email', null, true)
-    .dropdown-local-wrapper
-      +dropdown('dropdown', 'Сколько гостей', 'dropdown__inner_guests')
-    .dropdown-local-wrapper
-      +dropdown('dropdown', 'Какие удобства', 'dropdown__inner_facilities')
-    +textfield('text field', 'ДД.ММ.ГГГГ', '99.99.9999')
-    .dropdown-local-wrapper
-      +dropdown('date dropdown', 'ДД.ММ.ГГГГ', 'dropdown__inner_calendar')
-    .dropdown-local-wrapper
-      +dropdown-calendar2('filter date dropdown', 'начало - конец')
-    div(style="width: 267px; margin-top: 10px;")
-      +subscription-textfield()
-    div(style="width: 267px; margin-top: 10px;")
-      +expandable-checkbox-list([
-        {value: 'Завтрак', checked: false},
-        {value: 'Письменный стол', checked: true},
-        {value: 'Стул для кормления', checked: true},
-        {value: 'Кроватка', checked: true},
-        {value: 'Телевизор', checked: false},
-        {value: 'Шампунь', checked: false}
-      ])
+    div
+      +textfield('text field', 'Email', null, true)
+      .dropdown-local-wrapper
+        +dropdown('dropdown', 'Сколько гостей', 'dropdown__inner_guests')
+      .dropdown-local-wrapper
+        +dropdown('dropdown', 'Какие удобства', 'dropdown__inner_facilities')
+      +textfield('text field', 'ДД.ММ.ГГГГ', '99.99.9999')
+      .dropdown-local-wrapper
+        +dropdown('date dropdown', 'ДД.ММ.ГГГГ', 'dropdown__inner_calendar')
+      .dropdown-local-wrapper
+        +dropdown-calendar2('filter date dropdown', 'начало - конец')
+      div(style="width: 267px; margin-top: 10px;")
+        +subscription-textfield()
+      div(style="width: 267px; margin-top: 10px;")
+        +expandable-checkbox-list([
+          {value: 'Завтрак', checked: false},
+          {value: 'Письменный стол', checked: true},
+          {value: 'Стул для кормления', checked: true},
+          {value: 'Кроватка', checked: true},
+          {value: 'Телевизор', checked: false},
+          {value: 'Шампунь', checked: false}
+        ])
+    div
+      div(style="width: 267px; margin-top: 10px;")
+        +checkbox-button-list([
+          {value: 'Можно курить', checked: false},
+          {value: 'Можно с питомцами', checked: true},
+          {value: 'Можно пригласить гостей (до 10 человек)', checked: true}
+        ])
+      div(style="width: 217px; margin-top: 10px;")
+        +radio-button-list([
+          {value: 'Мужчина', checked: true},
+          {value: 'Женщина', checked: false},
+        ])
+      div(style="width: 267px; margin-top: 10px;")
+        label.toggle-button-list__title(style="margin-top: 10px;")= 'radio buttons'
+        br
+        div
+          +toggle('Получать спецпредложения', true)
+        div
+          +toggle('Получать спецпредложения', false)
+    div
+      label hi there2

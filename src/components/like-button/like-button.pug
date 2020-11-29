@@ -1,0 +1,4 @@
+mixin like-button(count,checked)
+  .like-button(class=checked ? 'checked' : undefined)
+    img.like-button__heart(class=checked ? 'checked' : undefined, src="./fonts/like__heart" + (checked ? "_checked" : "") + ".svg")
+    .like-button__count(class=checked ? 'checked' : undefined)= count

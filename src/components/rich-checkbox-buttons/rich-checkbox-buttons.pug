@@ -1,0 +1,10 @@
+mixin rich-checkbox-buttons(title, itemList)
+  .rich-checkbox-buttons
+    label.rich-checkbox-buttons__title= title
+    .rich-checkbox-buttons__item-wrapper
+      each val in itemList
+        .rich-checkbox-buttons__item-row
+          +checkbox(val.checked)
+          div
+            .rich-checkbox-buttons__item-title= val.title
+            .rich-checkbox-buttons__item-description= val.description

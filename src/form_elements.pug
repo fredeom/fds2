@@ -4,9 +4,12 @@ include components/dropdown/__inner/dropdown__inner.pug
 include components/dropdown/dropdown-calendar2.pug
 include components/dropdown/dropdown.pug
 include components/expandable-checkbox-list/expandable-checkbox-list.pug
+include components/rich-checkbox-buttons/rich-checkbox-buttons.pug
 include components/checkbox-button-list/checkbox-button-list.pug
 include components/radio-button-list/radio-button-list.pug
 include components/toggle/toggle.pug
+include components/like-button/like-button.pug
+include components/rate-button/rate-button.pug
 
 doctype html
 head
@@ -50,11 +53,27 @@ body
           {value: 'Женщина', checked: false},
         ])
       div(style="width: 267px; margin-top: 10px;")
-        label.toggle-button-list__title(style="margin-top: 10px;")= 'radio buttons'
+        label.toggle-button-list__title(style="margin-top: 10px;")= 'toggle'
         br
         div
           +toggle('Получать спецпредложения', true)
         div
           +toggle('Получать спецпредложения', false)
+      div(style="width: 267px; margin-top: 10px;")
+        label.like-button-list__title(style="margin-top: 10px;")= 'like button'
+        br
+        +like-button(2, false)
+        +like-button(12, true)
+      div(style="width: 267px; margin-top: 10px;")
+        label.like-button-list__title(style="margin-top: 10px;")= 'rate button'
+        br
+        div(style="margin-top: 10px;")
+          +rate-button(4, 5)
+          +rate-button(5, 5)
+      div(style="width: 267px; margin-top: 10px;")
+        +rich-checkbox-buttons('rich checkbox buttons', [
+          {title: 'Широкий коридор', description: 'Ширина коридоров в номере не менее 91 см.', checked: false},
+          {title: 'Помощник для инвалидов', description: 'На 1 этаже вас встретит специалист и проводит до номера.', checked: false},
+        ])
     div
       label hi there2

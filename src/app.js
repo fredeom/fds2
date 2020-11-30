@@ -15,6 +15,8 @@ import './components/radio/radio.scss';
 import './components/toggle/toggle.scss';
 import './components/like-button/like-button.scss';
 import './components/rate-button/rate-button.scss';
+import './components/range-slider/range-slider.scss';
+import './components/button/button.scss';
 
 import './components/dropdown/__inner/dropdown__inner';
 import './components/dropdown/__inner/_calendar/dropdown__inner_calendar';
@@ -29,3 +31,5 @@ import './components/radio/radio';
 import './components/toggle/toggle';
 import './components/like-button/like-button';
 import './components/rate-button/rate-button';
+import './components/range-slider/range-slider';
+import './components/button/button';

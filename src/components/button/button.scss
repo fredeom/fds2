@@ -1,0 +1,85 @@
+.button1 {
+  display: inline;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+
+  padding: 15px 20px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button1:hover, .button2:hover {
+  opacity: 0.5;
+}
+
+.button2 {
+  display: inline;
+  border: 1px solid #BC9CFF;
+  border-radius: 22px;
+
+  padding: 15px 20px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.button3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.button3:hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button4 {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+
+.button4-title {
+  padding: 15px 0;
+  width: 280px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button4-icon {
+  margin-right: 10px;
+  font-family: Material Icons;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+

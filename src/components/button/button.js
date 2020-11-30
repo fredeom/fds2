@@ -1,0 +1,1 @@
+import './button__arrow_right.svg';

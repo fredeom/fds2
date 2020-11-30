@@ -10,6 +10,8 @@ include components/radio-button-list/radio-button-list.pug
 include components/toggle/toggle.pug
 include components/like-button/like-button.pug
 include components/rate-button/rate-button.pug
+include components/range-slider/range-slider.pug
+include components/button/button.pug
 
 doctype html
 head
@@ -76,4 +78,21 @@ body
           {title: 'Помощник для инвалидов', description: 'На 1 этаже вас встретит специалист и проводит до номера.', checked: false},
         ])
     div
-      label hi there2
+      div(style="width: 200px;")
+        +range-slider('range slider', 0, 15000, 5000, 10000)
+      div(style="width: 205px; margin-top: 10px;")
+        label.like-button-list__title(style="margin-top: 10px;")= 'buttons'
+        br
+        br
+        +button1('click me')
+        br
+        br
+        br
+        +button2('click me')
+        br
+        br
+        br
+        +button3('click me')
+        br
+        br
+        +button4('перейти к оплате')

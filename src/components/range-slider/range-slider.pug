@@ -1,0 +1,12 @@
+mixin range-slider(title, min, max, selMin, selMax)
+  .range-slider(se-min=min,se-max=max,se-min-value=selMin,se-max-value=selMax,se-step=100)
+    .range-slider__title-and-result
+      label.range-slider__title= title
+      label.range-slider__result #{selMin}₽ - #{selMax}₽
+    div
+      .range-slider__touch-left
+        span
+      .range-slider__touch-right
+        span
+      .range-slider__line
+        span

@@ -1,0 +1,7 @@
+mixin bullet-list(title, itemList)
+  label.bullet-list__title= title
+  .bullet-list__item-wrapper
+    each val in itemList
+      .bullet-list__item-row
+        .bullet-list__item-circle
+        .bullet-list__item_value= val

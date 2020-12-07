@@ -12,6 +12,10 @@ include components/like-button/like-button.pug
 include components/rate-button/rate-button.pug
 include components/range-slider/range-slider.pug
 include components/button/button.pug
+include components/pagination/pagination.pug
+include components/bullet-list/bullet-list.pug
+include components/big-point/big-point.pug
+include components/guest-response/guest-response.pug
 
 doctype html
 head
@@ -96,3 +100,23 @@ body
         br
         br
         +button4('перейти к оплате')
+      div(style="width: 265px; margin-top: 10px;")
+        label.like-button-list__title(style="margin-top: 10px;")= 'pagination'
+        br
+        br
+        +pagination(15, 1, 1, 12)
+      div(style="width: 265px; margin-top: 10px;")
+        +bullet-list('bullet list', ['Нельзя с питомцами',
+                                     'Без вечеринок и мероприятий',
+                                     'Время прибытия — после 13:00, а выезд до 12:00'])
+  .wrapper2
+    div
+      div(style="width: 265px; margin-top: 30px;")
+        +big-point('Комфорт', 'Шумопоглощающие стены', 'big-smile.svg')
+      div(style="width: 265px; margin-top: 40px;")
+        +big-point('Удобство', 'Окно в каждой из спален', 'big-building.svg')
+    div
+      +guest-response('Мурад Сарафанов',
+                      '5 дней назад',
+                      'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+                      12, true)

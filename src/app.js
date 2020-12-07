@@ -17,6 +17,10 @@ import './components/like-button/like-button.scss';
 import './components/rate-button/rate-button.scss';
 import './components/range-slider/range-slider.scss';
 import './components/button/button.scss';
+import './components/pagination/pagination.scss';
+import './components/bullet-list/bullet-list.scss';
+import './components/big-point/big-point.scss';
+import './components/guest-response/guest-response.scss';
 
 import './components/dropdown/__inner/dropdown__inner';
 import './components/dropdown/__inner/_calendar/dropdown__inner_calendar';
@@ -33,3 +37,6 @@ import './components/like-button/like-button';
 import './components/rate-button/rate-button';
 import './components/range-slider/range-slider';
 import './components/button/button';
+import './components/pagination/pagination';
+import './components/big-point/big-point';
+import './components/guest-response/guest-response';

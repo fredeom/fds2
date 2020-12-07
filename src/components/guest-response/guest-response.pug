@@ -1,0 +1,15 @@
+include ../like-button/like-button.pug
+
+mixin guest-response(guestName, responseTime, responseText, likeCount, myLike)
+  table(style="width: 711px; height: 133px;")
+    tr
+      td
+        img(src="fonts/avatar.svg")
+      td(style="width: 100%;")
+        span.guest-response__text(style="font-weight: bold;")= guestName
+        p.guest-response__text= responseTime
+    tr
+      td(style="text-align: center; vertical-align: top;")
+        +like-button(likeCount, myLike)
+      td
+        span.guest-response__text= 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'

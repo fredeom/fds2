@@ -21,6 +21,10 @@ import './components/pagination/pagination.scss';
 import './components/bullet-list/bullet-list.scss';
 import './components/big-point/big-point.scss';
 import './components/guest-response/guest-response.scss';
+import './components/cards.scss';
+import './components/card/card.scss';
+import './components/card/will-find/card_will-find.scss';
+import './components/card/register/card_register.scss';
 
 import './components/dropdown/__inner/dropdown__inner';
 import './components/dropdown/__inner/_calendar/dropdown__inner_calendar';

@@ -1,8 +1,9 @@
 include ../radio/radio.pug
 
-mixin radio-button-list(itemList)
+mixin radio-button-list(title, itemList)
   .radio-button-list
-    label.radio-button-list__title= 'radio buttons'
+    if title
+      label.radio-button-list__title= title
     form
       .radio-button-list__item-wrapper
         each val in itemList

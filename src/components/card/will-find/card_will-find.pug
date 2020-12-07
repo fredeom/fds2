@@ -1,0 +1,17 @@
+include ../../../components/card/card.pug
+include ../../../components/dropdown/__inner/dropdown__inner.pug
+include ../../../components/dropdown/dropdown.pug
+include ../../../components/button/button.pug
+
+mixin card_will-find()
+  +card
+    .card__content-header.header1 Найдём номера под<br> ваши пожелания
+    .card_will-find__calendar-row
+      div
+        +dropdown('прибытие', 'ДД.ММ.ГГГГ', 'dropdown__inner_calendar')
+      div
+        +dropdown('выезд', 'ДД.ММ.ГГГГ', 'dropdown__inner_calendar')
+    .card_will-find__guests-row
+      +dropdown('гости', 'Сколько гостей', 'dropdown__inner_guests')
+    .card_will-find__button-row
+      +button4('подобрать номер')

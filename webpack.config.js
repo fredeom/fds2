@@ -55,6 +55,10 @@ const config = {
       filename: 'uikit2.html',
       template: './src/form_elements.pug',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'uikit3.html',
+      template: './src/cards.pug',
+    }),
  ]
 };
 module.exports = config;

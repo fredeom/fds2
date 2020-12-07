@@ -1,0 +1,31 @@
+include ../../../components/card/card.pug
+include ../../../components/textfield/textfield.pug
+include ../../../components/radio-button-list/radio-button-list.pug
+include ../../../components/toggle/toggle.pug
+include ../../../components/button/button.pug
+
+mixin card_register()
+  +card
+    .card__content-header.header1 Регистрация аккаунта
+    div(style="margin-top: 20px; margin-left: 30px; margin-right: 30px;")
+      +textfield(null, 'Имя')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      +textfield(null, 'Фамилия')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px; width: 220px;")
+      +radio-button-list(null, [
+        {value: 'Мужчина', checked: true},
+        {value: 'Женщина', checked: false},
+      ])
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      +textfield('дата рождения', 'ДД.ММ.ГГГГ', '99.99.9999')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      +textfield('данные для входа в сервис', 'Email')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      +textfield(null, 'Пароль')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      +toggle('Получать спецпредложения', false)
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      +button4('перейти к оплате')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px; margin-bottom: 30px; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;")
+      div Уже есть аккаунт на Toxin
+      +button2('войти')

@@ -1,0 +1,22 @@
+.card_will-find__calendar-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 320px;
+}
+
+.card_will-find__guests-row {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 320px;
+}
+
+.card_will-find__button-row {
+ margin: 30px 30px;
+ width: 320px;
+}

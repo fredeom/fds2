@@ -1,5 +1,6 @@
 include components/card/will-find/card_will-find.pug
 include components/card/register/card_register.pug
+include components/card/booking/card_booking.pug
 
 doctype html
 head
@@ -11,3 +12,8 @@ body
     div
       +card_will-find
       +card_register
+    div
+      +card_booking(888, 9990, '19.08.2019', '23.08.2019', {adults: 3}, [
+        {title: 'Сбор за услуги', discount: 2179, price: 0},
+        {title: 'Сбор за дополнительные услуги', discount: 0, price: 300}
+      ])

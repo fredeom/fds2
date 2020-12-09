@@ -25,6 +25,7 @@ import './components/cards.scss';
 import './components/card/card.scss';
 import './components/card/will-find/card_will-find.scss';
 import './components/card/register/card_register.scss';
+import './components/card/booking/card_booking.scss';
 
 import './components/dropdown/__inner/dropdown__inner';
 import './components/dropdown/__inner/_calendar/dropdown__inner_calendar';

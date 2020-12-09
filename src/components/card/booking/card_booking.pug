@@ -1,0 +1,46 @@
+include ../../../components/card/card.pug
+include ../../../components/dropdown/__inner/dropdown__inner.pug
+include ../../../components/dropdown/dropdown.pug
+include ../../../components/button/button.pug
+
+mixin card_booking(roomnumber, priceperday, arrivalday, leavingday, guests, services)
+  +card
+    div(style="margin-top: 20px; margin-left: 30px; margin-right: 30px; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; width: 320px")
+      div
+        span.card_booking__roomnumber №
+        span.card_booking__roomnumber_number #{roomnumber}
+        span.card_booking__lux= ' люкс'
+      div
+        span.card_booking__priceperday #{priceperday}₽ в сутки
+    .card_will-find__calendar-row
+      div
+        +dropdown('прибытие', arrivalday, 'dropdown__inner_calendar')
+      div
+        +dropdown('выезд', leavingday, 'dropdown__inner_calendar')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      - var guestsNum = (guests['adults'] ? guests['adults'] : 0 ) + (guests['children'] ? guests['children'] : 0) + (guests['babies'] ? guests['babies'] : 0);
+      +dropdown('гости', guestsNum + ' гостя', 'dropdown__inner_guests')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      .card_booking__services-row
+        - var leavedateList = leavingday.split('.')
+        - var leavedate = new Date(leavedateList[2], leavedateList[1], leavedateList[0])
+        - var arrivaldateList = arrivalday.split('.')
+        - var arrivaldate = new Date(arrivaldateList[2], arrivaldateList[1], arrivaldateList[0])
+        - var days_num = Math.floor((leavedate - arrivaldate) / (1000*60*60*24))
+        - var sum = priceperday * days_num;
+        div #{priceperday} x #{days_num} суток
+        div #{sum}₽
+      each val in services
+        .card_booking__services-row
+          div #{val.title}
+            if val.discount > 0
+              span : скидка #{val.discount}₽
+              - sum = sum - val.discount
+          div(style="border: 1px solid rgba(31, 32, 65, 0.25); border-radius: 50%; color: rgba(31, 32, 65, 0.25); width: 20px; display: flex; justify-content: center; align-items: center;") i
+          div #{val.price}₽
+          - sum = sum + val.price
+      .card_booking__price-total
+        div Итого
+        div #{sum}₽
+    div(style="margin: 20px 30px 30px 30px;")
+      +button4('забронировать')

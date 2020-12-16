@@ -61,8 +61,10 @@ function fillCalendar(ic, date, currentDate) {
   if (currentDate) clr.classList.add('visible'); else clr.classList.remove('visible');
   clr.addEventListener('click', function () { fillCalendar(ic, date, null); });
   ic.querySelector(".dropdown__inner-apply").addEventListener('click', function () {
-    this.parentNode.parentNode.parentNode.querySelector('.dropdown-select .dropdown-select__text').textContent = currentDate ? getDateString(currentDatePlusOne) : 'ДД.ММ.ГГГГ';
+    currentDate.setTime(currentDate.getTime() + 3*60*100000); // something is wrong with UTC GMT getDate correction.
+    this.parentNode.parentNode.parentNode.querySelector('.dropdown-select .dropdown-select__text').textContent = currentDate ? getDateString(currentDate) : 'ДД.ММ.ГГГГ';
     this.parentNode.parentNode.classList.remove('dropdown__inner-wrapper_visible');
+    this.parentNode.parentNode.parentNode.querySelector('.dropdown-select').dispatchEvent(new Event("change"));
   });
 }
 

@@ -45,3 +45,4 @@ import './components/button/button';
 import './components/pagination/pagination';
 import './components/big-point/big-point';
 import './components/guest-response/guest-response';
+import './components/card/booking/card_booking.js';

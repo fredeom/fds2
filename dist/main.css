@@ -55,5 +55,7 @@
 
 .card_booking__roomnumber{font-family:Quicksand;font-weight:bold;font-size:14px;line-height:17px;color:#1F2041}.card_booking__roomnumber_number{font-size:24px;line-height:30px}.card_booking__lux{font-family:Montserrat;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#BC9CFF}.card_booking__priceperday{font-family:Montserrat;font-weight:bold;font-size:14px;line-height:18px;color:rgba(31,32,65,0.5)}.card_booking__services-row{font-family:Montserrat;font-weight:normal;font-size:14px;line-height:24px;color:rgba(31,32,65,0.75);display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;margin-top:10px}.card_booking__price-total{display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;margin-top:30px;font-family:Quicksand;font-weight:bold;font-size:19px;line-height:24px;color:#1F2041}
 
+.room-rating__roomnumber{font-family:Quicksand;font-weight:bold;font-size:14px;line-height:17px;color:#1F2041}.room-rating__roomnumber_number{font-family:Quicksand;font-weight:bold;font-size:19px;line-height:24px;color:#1F2041}.room-rating__lux{font-family:Montserrat;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#BC9CFF}.room-rating__priceperday{font-family:Montserrat;font-weight:bold;font-size:14px;line-height:18px;color:rgba(31,32,65,0.5)}.rooom-rating__comments{font-family:Montserrat;font-weight:bold;font-size:14px;line-height:18px;text-align:right;color:rgba(31,32,65,0.5)}
+
 
 /*# sourceMappingURL=main.css.map*/

@@ -1,6 +1,8 @@
 include components/card/will-find/card_will-find.pug
 include components/card/register/card_register.pug
 include components/card/booking/card_booking.pug
+include components/card/login/card_login.pug
+include components/room-rating/room-rating.pug
 
 doctype html
 head
@@ -17,3 +19,9 @@ body
         {title: 'Сбор за услуги', discount: 2179, price: 0},
         {title: 'Сбор за дополнительные услуги', discount: 0, price: 300}
       ])
+      +card_login
+    div(style="margin: 20px;")
+      div(style="margin: 20px;")
+        +room-rating(888)
+      div(style="margin: 20px;")
+        +room-rating(840)

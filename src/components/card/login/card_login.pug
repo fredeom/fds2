@@ -1,0 +1,14 @@
+include ../../../components/card/card.pug
+
+mixin card_login()
+  +card
+    .card__content-header.header1 Войти
+    div(style="margin-top: 20px; margin-left: 30px; margin-right: 30px;")
+      +textfield(null, 'Email')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      +textfield(null, 'Пароль')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px;")
+      +button4('войти')
+    div(style="margin-top: 10px; margin-left: 30px; margin-right: 30px; margin-bottom: 30px; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;")
+      div Нет аккаунта на Toxin?
+      +button2('создать')

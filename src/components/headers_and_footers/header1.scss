@@ -1,0 +1,89 @@
+.logo_and_menu_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  margin-left: 140px;
+}
+
+.logo_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 106px;
+}
+
+.menu_and_buttons_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 770px;
+}
+
+.menu_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 447px;
+}
+
+.menu_item {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_item.active {
+  color: rgba(31, 32, 65, 1);
+}
+
+.menu_item_closed {
+  width: 5px;
+  height: 5px;
+  margin-left: 2px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(45deg);
+}
+
+.buttons_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 303px;
+}
+
+.user_name {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.menu_and_user_name_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 588px; 
+}
+
+.user_name_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 121px;
+}

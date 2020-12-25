@@ -59,6 +59,10 @@ const config = {
       filename: 'uikit3.html',
       template: './src/cards.pug',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'uikit4.html',
+      template: './src/headers_and_footers.pug',
+    }),
  ]
 };
 module.exports = config;

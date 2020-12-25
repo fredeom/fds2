@@ -1,0 +1,44 @@
+include ../../components/textfield/subscription-textfield.pug
+
+mixin footer1()
+  div(style="background: #fff; padding-left: 140px; padding-top: 100px; padding-bottom: 100px;")
+    .topics_wrapper
+      div(style="flex: 0 0 300px;")
+        .topic1_wrapper
+          .logo_wrapper
+            img(src='./fonts/logo.svg')
+            img(src='./fonts/toxin.svg')
+          div(style="margin-top: 20px;") Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      div(style="flex: 0 0 200px;")
+        .topic2_wrapper
+          .topic_header навигация
+          .topic_link О нас
+          .topic_link Новости
+          .topic_link Служба поддержки
+          .topic_link Услуги
+      div(style="flex: 0 0 200px;")
+        .topic2_wrapper
+          .topic_header о нас
+          .topic_link О сервисе
+          .topic_link Наша команда
+          .topic_link Вакансии
+          .topic_link Инвесторы
+      div(style="flex: 0 0 200px;")
+        .topic2_wrapper
+          .topic_header Служба поддержки
+          .topic_link Соглашения
+          .topic_link Сообщества
+          .topic_link Связь с нами
+      div(style="flex: 0 0 260px;")
+        .topic3_wrapper
+          .topic_header Подписка
+          .topic_link Получайте специальные предложения и новости сервиса
+          div(style="margin-top: 20px;")
+            +subscription-textfield()
+  div(style="background: #fff; margin-top: 1px; padding-left: 140px; padding-top: 26px; padding-bottom: 26px;")
+    .footer1_copyright_social_wrapper
+      .copyright_text Copyright © 2018 Toxin отель. Все права зачищены.
+      .socials_wrapper
+        img(src='./fonts/twitter.svg')
+        img(src='./fonts/facebook.svg')
+        img(src='./fonts/instagram.svg')

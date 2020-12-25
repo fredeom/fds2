@@ -36,6 +36,8 @@ body
       .dropdown-local-wrapper
         +dropdown-calendar2('filter date dropdown', 'начало - конец')
       div(style="width: 267px; margin-top: 10px;")
+        label.text_field_label= 'Subscription text field'
+        br
         +subscription-textfield()
       div(style="width: 267px; margin-top: 10px;")
         +expandable-checkbox-list([

@@ -1,0 +1,20 @@
+
+include components/headers_and_footers/header1.pug
+include components/headers_and_footers/header2.pug
+include components/headers_and_footers/footer1.pug
+include components/headers_and_footers/footer2.pug
+
+doctype html
+head
+  meta(charset='UTF-8')
+  title Cards
+
+body(style="background: #E5E5E5; padding: 0; margin: 0;")
+  div(style="margin-top: 140px;")
+    +header1
+  div(style="margin-top: 40px;")
+    +header2
+  div(style="margin-top: 40px;")
+    +footer1
+  div(style="margin-left: 336px; margin-top: 40px; width: 768px;")
+    +footer2

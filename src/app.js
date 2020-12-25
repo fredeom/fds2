@@ -27,6 +27,9 @@ import './components/card/will-find/card_will-find.scss';
 import './components/card/register/card_register.scss';
 import './components/card/booking/card_booking.scss';
 import './components/room-rating/room-rating.scss';
+import './components/headers_and_footers/header1.scss';
+import './components/headers_and_footers/footer1.scss';
+import './components/headers_and_footers/footer2.scss';
 
 import './components/dropdown/__inner/dropdown__inner';
 import './components/dropdown/__inner/_calendar/dropdown__inner_calendar';
@@ -48,3 +51,5 @@ import './components/big-point/big-point';
 import './components/guest-response/guest-response';
 import './components/card/booking/card_booking';
 import './components/room-rating/room-rating';
+import './components/headers_and_footers/header1';
+import './components/headers_and_footers/footer1';

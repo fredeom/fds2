@@ -1,0 +1,22 @@
+include ../../components/button/button.pug
+
+mixin header1()
+  div(style="background: #fff; padding: 15px;")
+    .logo_and_menu_wrapper
+      .logo_wrapper
+        img(src='./fonts/logo.svg')
+        img(src='./fonts/toxin.svg')
+      .menu_and_buttons_wrapper
+        .menu_wrapper
+          .menu_item.active О нас
+          .menu_item
+            div Услуги
+            .menu_item_closed
+          .menu_item Вакансии
+          .menu_item Новости
+          .menu_item
+            div Соглашения
+            .menu_item_closed
+        .buttons_wrapper
+          +button2('войти')
+          +button1('зарегистрироваться')

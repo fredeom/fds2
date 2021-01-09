@@ -63,6 +63,10 @@ const config = {
       filename: 'uikit4.html',
       template: './src/headers_and_footers.pug',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'website_landing.html',
+      template: './src/landing.pug',
+    }),
  ]
 };
 module.exports = config;

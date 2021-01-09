@@ -1,0 +1,17 @@
+include components/headers_and_footers/header1.pug
+include components/headers_and_footers/footer1.pug
+include components/card/will-find/card_will-find.pug
+
+doctype html
+
+head
+  meta(charset='UTF-8')
+  title Website landing page
+
+body
+  +header1
+  .landing-main-background
+    .landing-main-background__will-find
+      +card_will-find
+    .landing-main-background__note Лучшие номера для вашей работы, отдыха и просто вдохновения
+  +footer1

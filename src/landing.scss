@@ -1,0 +1,29 @@
+.landing-main-background {
+  position: relative;
+  width: 1440px;
+  height: 830px;
+  background: url('./image3.svg') center / cover no-repeat ;
+}
+
+.landing-main-background__will-find {
+  position: absolute;
+  top: 70px;
+  left: 140px;
+  right: 920px;
+  width: 460px;
+}
+
+.landing-main-background__note {
+  position: absolute;
+  width: 297px;
+  height: 48px;
+  right: 134px;
+  bottom: 18px;
+
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.75);
+}

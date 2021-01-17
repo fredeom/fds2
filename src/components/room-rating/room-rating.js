@@ -1,8 +1,18 @@
 import './room_888_1.svg';
 import './room_840_1.svg';
+import './room_980_1.svg';
+import './room_856_1.svg';
+import './room_740_1.svg';
+import './room_982_1.svg';
+import './room_678_1.svg';
+import './room_450_1.svg';
+import './room_350_1.svg';
+import './room_444_1.svg';
+import './room_352_1.svg';
 
 function fill_room_rating(className, imgs, roomnumber, isLux, priceperday, stars, responseCount) {
   const rr = document.querySelector('.room-rating.' + className);
+  if (!rr) return;
   rr.style.background = '#fff';
   const img_wrapper = document.createElement('div');
   img_wrapper.style.position = 'relative';
@@ -90,3 +100,25 @@ function fill_room_rating(className, imgs, roomnumber, isLux, priceperday, stars
 
 fill_room_rating('class_888', ['./fonts/room_888_1.svg', './fonts/room_840_1.svg'], 888, true, 9990, 5, 145)
 fill_room_rating('class_840', ['./fonts/room_840_1.svg', './fonts/room_888_1.svg'], 840, false, 9900, 4, 65)
+
+const rooms = document.querySelector('.search-main__rooms');
+if (rooms) {
+  const rooms_conf = [['class_888', ['./fonts/room_888_1.svg', './fonts/room_840_1.svg'], 888, true, 9990, 5, 145],
+                      ['class_840', ['./fonts/room_840_1.svg', './fonts/room_888_1.svg'], 840, false, 9900, 4, 65],
+                      ['class_980', ['./fonts/room_980_1.svg'], 980, true, 8500, 3, 35],
+                      ['class_856', ['./fonts/room_856_1.svg'], 856, false, 7300, 5, 19],
+                      ['class_740', ['./fonts/room_740_1.svg'], 740, false, 6000, 4, 44],
+                      ['class_982', ['./fonts/room_982_1.svg'], 982, false, 5800, 3, 56],
+                      ['class_678', ['./fonts/room_678_1.svg'], 678, false, 5500, 5, 45],
+                      ['class_450', ['./fonts/room_450_1.svg'], 450, false, 5300, 4, 39],
+                      ['class_350', ['./fonts/room_350_1.svg'], 350, false, 5000, 3, 77],
+                      ['class_666', ['./fonts/room_666_1.svg'], 666, false, 5000, 5, 25],
+                      ['class_444', ['./fonts/room_444_1.svg'], 444, false, 5000, 3, 15],
+                      ['class_352', ['./fonts/room_352_1.svg'], 352, false, 5000, 3, 55],
+                    ];
+  rooms.innerHTML = '';
+  for (let conf of rooms_conf) {
+    rooms.innerHTML += '<div style="margin-bottom: 20px;"><div class="room-rating ' + conf[0] + '"></div></div>';
+    fill_room_rating(conf[0], conf[1], conf[2], conf[3], conf[4], conf[5], conf[6]);
+  }
+}

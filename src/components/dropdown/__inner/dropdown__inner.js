@@ -1,8 +1,8 @@
 const util = require('../../util');
 
-document.querySelectorAll(".dropdown-select").forEach(ds => ds.onclick = function () {
+document.querySelectorAll(".dropdown-select").forEach(ds => ds.addEventListener('click', function () {
   this.parentNode.querySelector(".dropdown__inner-wrapper").classList.toggle('dropdown__inner-wrapper_visible');
-});
+}));
 
 document.querySelectorAll('.minus-control.inner-plus-minus-control__control').forEach(mc => mc.classList.add('disabled'));
 document.querySelectorAll('.minus-control.inner-plus-minus-control__control').forEach(mc => mc.onclick = function () {

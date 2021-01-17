@@ -67,6 +67,10 @@ const config = {
       filename: 'website_landing.html',
       template: './src/landing.pug',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'website_search.html',
+      template: './src/search.pug',
+    }),
  ]
 };
 module.exports = config;

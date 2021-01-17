@@ -1,9 +1,9 @@
 include ../checkbox/checkbox.pug
 
-mixin expandable-checkbox-list(itemList)
+mixin expandable-checkbox-list(title, itemList)
   .expandable-checkbox-list
     .expandable-checkbox-list__header
-      label.expandable-checkbox-list__title= 'expandable checkbox list'
+      label.expandable-checkbox-list__title= title
       .expandable-checkbox-list__arrow
     .expandable-checkbox-list__item-wrapper
       each val in itemList

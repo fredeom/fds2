@@ -29,7 +29,7 @@ function fillCalendar(ic, date, currentDate) {
   while (z <= lastDayOfWindow) {
     z.setDate(z.getDate() + 1);
     let value = '' + z.getDate();
-    if (value.length == 1) value = '0' + value;
+    //if (value.length == 1) value = '0' + value;
     dateContent += '<div data-day="' + getDateString(z) + '" class="calendar_date_content_item ' + (z < firstDayOfMonth || z >= lastDayOfMonthPlusOne ? "gray" : "black") + ' ' + ((currentDate && (z > currentDate) && (z < currentDatePlusOne)) ? "selected" : "") + '">' + value + '</div>';
   }
   dateContent += '</div>';

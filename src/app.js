@@ -31,6 +31,7 @@ import './components/headers_and_footers/header1.scss';
 import './components/headers_and_footers/footer1.scss';
 import './components/headers_and_footers/footer2.scss';
 import './landing.scss';
+import './search.scss';
 
 import './components/dropdown/__inner/dropdown__inner';
 import './components/dropdown/__inner/_calendar/dropdown__inner_calendar';

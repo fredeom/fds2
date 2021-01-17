@@ -1,6 +1,9 @@
 .dropdown__inner-wrapper {
   border: 1px solid black;
   display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: white;
 }
 
 .dropdown__inner-wrapper_visible {

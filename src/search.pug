@@ -1,0 +1,53 @@
+include components/headers_and_footers/header1.pug
+include components/headers_and_footers/footer1.pug
+include components/dropdown/__inner/dropdown__inner.pug
+include components/dropdown/dropdown-calendar2.pug
+include components/dropdown/dropdown.pug
+include components/range-slider/range-slider.pug
+include components/expandable-checkbox-list/expandable-checkbox-list.pug
+include components/rich-checkbox-buttons/rich-checkbox-buttons.pug
+include components/checkbox-button-list/checkbox-button-list.pug
+
+doctype html
+
+head
+  meta(charset='UTF-8')
+  title Website Search page
+
+body
+  +header1
+  .search-main
+    .search-main__side
+      div(style="width: 266px;")
+        +dropdown-calendar2('даты пребывания в отеле', '19 авг - 23 авг')
+        div(style="margin-top: 20px")
+        +dropdown('гости', '3 гостя, 1 младенец', 'dropdown__inner_guests')
+        div(style="margin-top: 30px")
+        +range-slider('диапазон цены', 0, 15000, 5000, 10000)
+        div(style="margin-top: 10px")
+        .search-main__side_slider_note Стоимость за сутки пребывания в номере
+        div(style="margin-top: 30px")
+        +checkbox-button-list([
+          {value: 'Можно курить', checked: false},
+          {value: 'Можно с питомцами', checked: true},
+          {value: 'Можно пригласить гостей<br> (до 10 человек)', checked: true}
+        ])
+        div(style="margin-top: 30px")
+        +rich-checkbox-buttons('доступность', [
+          {title: 'Широкий коридор', description: 'Ширина коридоров в номере не менее 91 см.', checked: false},
+          {title: 'Помощник для инвалидов', description: 'На 1 этаже вас встретит специалист и проводит до номера.', checked: false},
+        ])
+        div(style="margin-top: 30px")
+        +dropdown('удобства номера', '2 спальни, 2 кровати...', 'dropdown__inner_facilities')
+        div(style="margin-top: 30px")
+        +expandable-checkbox-list('дополнительные удобства', [
+          {value: 'Завтрак', checked: false},
+          {value: 'Письменный стол', checked: true},
+          {value: 'Стул для кормления', checked: true},
+          {value: 'Кроватка', checked: true},
+          {value: 'Телевизор', checked: false},
+          {value: 'Шампунь', checked: false}
+        ])
+    .search-main__rooms
+      label and there
+  +footer1

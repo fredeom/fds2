@@ -32,12 +32,12 @@ function fillCalendar2(iw, showDate, startDate, endDate, turn) {
   const endDatePlusOne = getPlusOne(endDate);
   while (z <= lastDayOfWindow) {
     z.setDate(z.getDate() + 1);
-    const value = pad0(z.getDate(), 2);
+    const value = z.getDate();//pad0(z.getDate(), 2);
     dateContent += '<div data-day="' + getDateString(z) + '" class="calendar_date_content_item ' +
                      (z < firstDayOfMonth || z >= lastDayOfMonthPlusOne ? "gray" : "black") +
-                     ((startDate && (z > startDate) && (z < startDatePlusOne)) ||
-                      (endDate && (z > endDate) && (z < endDatePlusOne)) ? " selected2" : "") +
-                      (startDate && endDate && (z > startDate) && (z < endDatePlusOne) ? ' selected-interval' : '') + '">' + value + '</div>';
+                     ((startDate && (z > startDate) && (z < startDatePlusOne)) ? " selected-start" : "") +
+                     ((endDate && (z > endDate) && (z < endDatePlusOne)) ? " selected-end" : "") +
+                      (startDate && endDate && (z > startDatePlusOne) && (z < endDate) ? ' selected-interval' : '') + '">' + value + '</div>';
   }
   dateContent += '</div>';
 

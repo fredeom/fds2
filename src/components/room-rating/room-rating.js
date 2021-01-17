@@ -7,6 +7,7 @@ import './room_982_1.svg';
 import './room_678_1.svg';
 import './room_450_1.svg';
 import './room_350_1.svg';
+import './room_666_1.svg';
 import './room_444_1.svg';
 import './room_352_1.svg';
 

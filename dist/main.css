@@ -65,7 +65,7 @@
 
 .landing-main-background{position:relative;width:1440px;height:830px;background:url(/fonts/image3.svg) center/cover no-repeat}.landing-main-background__will-find{position:absolute;top:70px;left:140px;right:920px;width:460px}.landing-main-background__note{position:absolute;width:297px;height:48px;right:134px;bottom:18px;font-family:Montserrat;font-weight:normal;font-size:14px;line-height:24px;text-align:right;color:rgba(31,32,65,0.75)}
 
-.search-main{background-color:cyan;margin-left:140px}.search-main__side{width:326px;float:left}.search-main__rooms{float:left;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;width:834px}.search-main__side_slider_note{font-family:Montserrat;font-weight:normal;font-size:12px;line-height:14px;color:rgba(31,32,65,0.5)}
+.search-main{margin-left:140px}.search-main__side{width:326px;float:left}.search-main__rooms{float:left;display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;width:834px}.search-main__side_slider_note{font-family:Montserrat;font-weight:normal;font-size:12px;line-height:14px;color:rgba(31,32,65,0.5)}
 
 
 /*# sourceMappingURL=main.css.map*/

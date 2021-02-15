@@ -71,6 +71,10 @@ const config = {
       filename: 'website_search.html',
       template: './src/search.pug',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'website_room_details.html',
+      template: './src/room_details.pug',
+    }),
  ]
 };
 module.exports = config;

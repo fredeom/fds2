@@ -1,0 +1,59 @@
+include components/headers_and_footers/header1.pug
+include components/headers_and_footers/footer1.pug
+include components/bullet-list/bullet-list.pug
+include components/big-point/big-point.pug
+include components/guest-response/guest-response.pug
+include components/card/booking/card_booking.pug
+
+doctype html
+
+head
+  meta(charset='UTF-8')
+  title Website Room Details page
+
+body
+  +header1
+  .room-details__views-layout
+  .room-details__wrapper1
+    div(style='float:left;')
+      .room-details__info_impressions
+        .room-details__room_info
+          .room-details__title Сведения о номере
+          div
+            div(style="width: 265px; margin-top: 30px;")
+              +big-point('Комфорт', 'Шумопоглощающие стены', 'big-smile.svg')
+            div(style="width: 265px; margin-top: 40px;")
+              +big-point('Удобство', 'Окно в каждой из спален', 'big-building.svg')
+            div(style="width: 265px; margin-top: 40px;")
+              +big-point('Уют', 'Номер оснащён камином', 'big-flame.svg')
+        .room-details__room_impressions
+          .room-details__title Впечатления от номера
+          .room-details__chart
+      div(style="margin-top: 33px;")
+      .room-details__title Отзывы посетителей номера
+      div
+        +guest-response("fonts/avatar.svg", 'Мурад Сарафанов',
+                        '5 дней назад',
+                        'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+                        12, true)
+      div
+        +guest-response("fonts/avatar2.svg", 'Патрисия Стёклышкова',
+                        'Неделю назад',
+                        'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент.',
+                        2, false)
+      div(style="margin-top: 30px;")
+      .room-details__rules_discard
+        div(style="width: 265px; margin-top: 10px; margin-right: 70px; float: left")
+          +bullet-list('правила', ['Нельзя с питомцами',
+                                  'Без вечеринок и мероприятий',
+                                  'Время прибытия — после 13:00, а выезд до 12:00'])
+        div(style="width: 265px; float:left;")
+          label.bullet-list__title Отмена
+          .room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+      div(style="margin-top: 70px;")
+    div(style='float:left;')
+      +card_booking(888, 9990, '19.08.2019', '23.08.2019', {adults: 3}, [
+        {title: 'Сбор за услуги', discount: 2179, price: 0},
+        {title: 'Сбор за дополнительные услуги', discount: 0, price: 300}
+      ])
+  +footer1

@@ -1,4 +1,6 @@
 import './room_888_1.svg';
+import './room_888_2.svg';
+import './room_888_3.svg';
 import './room_840_1.svg';
 import './room_980_1.svg';
 import './room_856_1.svg';

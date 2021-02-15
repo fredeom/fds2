@@ -1,10 +1,10 @@
 include ../like-button/like-button.pug
 
-mixin guest-response(guestName, responseTime, responseText, likeCount, myLike)
+mixin guest-response(guestImage, guestName, responseTime, responseText, likeCount, myLike)
   table(style="width: 711px; height: 133px;")
     tr
       td
-        img(src="fonts/avatar.svg")
+        img(src=guestImage)
       td(style="width: 100%;")
         span.guest-response__text(style="font-weight: bold;")= guestName
         p.guest-response__text= responseTime

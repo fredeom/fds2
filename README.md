@@ -9,3 +9,5 @@
 [FSD Frontend 2 step education Website landing page](https://fredeom.github.io/fds2/dist/website_landing.html)  
 [FSD Frontend 2 step education Website search room page](https://fredeom.github.io/fds2/dist/website_search.html)  
 [FSD Frontend 2 step education Website room details page](https://fredeom.github.io/fds2/dist/website_room_details.html)  
+[FSD Frontend 2 step education Website registration page](https://fredeom.github.io/fds2/dist/website_registration.html)  
+[FSD Frontend 2 step education Website sign in page](https://fredeom.github.io/fds2/dist/website_signin.html)  

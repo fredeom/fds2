@@ -58,3 +58,4 @@ import './components/headers_and_footers/header1';
 import './components/headers_and_footers/footer1';
 import './landing';
 import './room_details';
+import './registration';

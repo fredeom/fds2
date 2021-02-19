@@ -75,6 +75,14 @@ const config = {
       filename: 'website_room_details.html',
       template: './src/room_details.pug',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'website_registration.html',
+      template: './src/registration.pug',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'website_signin.html',
+      template: './src/signin.pug',
+    }),
  ]
 };
 module.exports = config;

@@ -1,0 +1,17 @@
+include components/headers_and_footers/header1.pug
+include components/headers_and_footers/footer1.pug
+include components/card/register/card_register.pug
+
+doctype html
+
+head
+  meta(charset='UTF-8')
+  title Website Registration page
+
+body
+  +header1
+  div(style="position: relative;")
+    img(src="./fonts/registration_bg.svg", alt="registration")
+    div(style="position: absolute; left: 577px; top: 19px;")
+      +card_register
+  +footer1

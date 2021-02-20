@@ -140,6 +140,7 @@ function fillChart(chart, scores) {
 
   chart.appendChild(svg);
   chart.appendChild(d);
+  chart.innerHTML = ' ' + chart.innerHTML; // Без этой строки гистограмма присутствует в доме, но не отображается
 }
 
 const chart = document.querySelector('.room-details__chart');
